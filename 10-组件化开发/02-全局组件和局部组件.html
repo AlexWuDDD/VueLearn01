@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>--- app ---</h2>
+  <cpn></cpn>
+</div>
+
+<div id="app2">
+  <h2>--- app2 ---</h2>
+  <cpn></cpn>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  //1.创建组建构造器
+  const cpnC = Vue.extend({
+    template:`
+      <div>
+        <h2>我是标题</h2>
+        <p>我是内容，哈哈哈哈哈</p>
+        <p>我是内容，呵呵呵呵呵呵</p>
+      </div>
+    `
+  });
+  // //2.注册组件(全局组件, 意味着可以在多个Vue的实例中使用)
+  // Vue.component('cpn', cpnC);
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components:{
+      //cpn使用组件时的标签名
+      cpn: cpnC
+    },
+  });
+
+  const app2 = new Vue({
+    el: '#app2',
+  });
+</script>
+
+</body>
+</html>

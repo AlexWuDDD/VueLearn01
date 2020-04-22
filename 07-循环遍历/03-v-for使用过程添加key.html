@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- key可以提高效率 -->
+  <ul>
+    <li v-for="chr in letters" :key="chr">{{chr}}</li>
+  </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      letters: ['a','b','c', 'd'],
+    }
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- 1.checkbox单选框 -->
+  <!--  <label for="protocol">-->
+  <!--    <input type="checkbox" id="protocol" v-model="agree">同意协议-->
+  <!--  </label>-->
+  <!--  <h2>您选择的是: {{agree}}</h2>-->
+  <!--  <button v-bind:disabled="!agree">下一步</button>-->
+
+  <!-- 2.checkbox复选框  -->
+  <label for="hobby1">
+    <input type="checkbox" id= "hobby1" value="篮球" v-model="hobbies">篮球
+  </label>
+  <label for="hobby2">
+    <input type="checkbox" id= "hobby2" value="足球" v-model="hobbies">足球
+  </label>
+  <label for="hobby3">
+    <input type="checkbox" id= "hobby3" value="乒乓球" v-model="hobbies">乒乓球
+  </label>
+  <label for="hobby4">
+    <input type="checkbox" id= "hobby4" value="羽毛球" v-model="hobbies">羽毛球
+  </label>
+  <h2>您的爱好是：{{hobbies}}</h2>
+
+  <h2>您原来的爱好</h2>
+  <label v-for="hobby in originalHobbies" :for=hobby>
+    <input type="checkbox" :id=hobby :value=hobby v-model="newHobbies">{{hobby}}
+  </label>
+  <h2>您的新爱好：{{newHobbies}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello',
+      agree: false,
+      hobbies:[],
+      originalHobbies:['篮球','足球','乒乓球', '羽毛球', '台球', '高尔夫球'],
+      newHobbies:[]
+    }
+  })
+</script>
+
+</body>
+</html>

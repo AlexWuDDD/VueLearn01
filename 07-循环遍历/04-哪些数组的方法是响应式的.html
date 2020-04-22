@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <ul>
+    <li v-for="chr in letters">{{chr}}</li>
+  </ul>
+  <button @click="btnClick">按钮</button>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      letters: ['a', 'b', 'c', 'd']
+    },
+    methods:{
+      btnClick() {
+        //1. push 方法
+        //this.letters.push('aaaa');
+        //2.pop()
+        //this.letters.pop()//最后一位删除;
+        //shift()
+        //this.letters.shift();//从头部开始删
+        //unshift()
+        // this.letters.unshift('lll','mmmm'); //在头部插入元素
+        //splice(): 删除元素/插入元素/替换元素
+        //删除元素：第二个参数传入你要删除几个元素，如果没有传就删除后面全部
+        //替换元素：第二个参数，表示我们要替换几个元素，后面是用于替换前面的元素
+        //splice(start，)
+        //替换元素：第二个参数设置为0,后面是用于插入的元素
+        this.letters.splice(2, 0, 'x','y', 'z');
+        //sort()
+        //reverse()
+
+        // //2. 通过索引值改变数组值, 非响应式
+        // this.letters[1] = 'aaaa';
+        //Vue.set(要修改的对象， 索引值，修改后的值)
+      }
+    }
+  })
+</script>
+
+</body>
+</html>
