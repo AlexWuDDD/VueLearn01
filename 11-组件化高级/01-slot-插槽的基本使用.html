@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<template id="cpn">
+  <div>
+    <h2>我是组件</h2>
+    <p>我是组件，哈哈哈哈哈</p>
+    <slot><button>按钮</button></slot>
+    <!-- slot之间的是默认值    -->
+  </div>
+</template>
+
+<div id="app">
+  <cpn><button>按钮</button></cpn>
+  <cpn><span>哈哈哈</span></cpn>
+  <cpn><i>呵呵呵</i></cpn>
+  <cpn>
+    <p>哈哈哈</p>
+    <h3>wuwuwuwuw</h3>
+  </cpn>
+  <cpn></cpn>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+
+  const  cpn = {
+    template: `#cpn`,
+  };
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello'
+    },
+    components:{
+      cpn,
+    }
+  })
+</script>
+
+</body>
+</html>
