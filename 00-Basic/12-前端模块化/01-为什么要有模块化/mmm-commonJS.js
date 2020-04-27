@@ -1,0 +1,1 @@
+var {flag, sum} = require('./aaa.js');

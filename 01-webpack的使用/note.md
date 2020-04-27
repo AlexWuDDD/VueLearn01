@@ -1,0 +1,3 @@
+# cmd
+
+>webpack ./src/main.js ./dist/bundle.js
