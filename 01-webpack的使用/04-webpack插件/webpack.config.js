@@ -1,12 +1,14 @@
 const path = require('path');
 const webpack = require('webpack');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry:'./src/main.js',
   output:{
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: 'dist/',
+    // publicPath: 'dist/',
   },
   module:{
     rules:[
@@ -31,5 +33,13 @@ module.exports = {
   },
   plugins:[
     new webpack.BannerPlugin('最终版权归Alex所有'),
+    new htmlWebpackPlugin({
+      template:'index.html',
+    }),
+    new uglifyJsPlugin(),
   ],
+  devServer:{
+    contentBase: './dist',
+    inline: true
+  },
 }

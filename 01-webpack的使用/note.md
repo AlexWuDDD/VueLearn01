@@ -13,6 +13,17 @@
 >npm install vue --save
 >
 >npm install vue-loader vue-template-compiler --save-dev
+>
+>npm install html-webpack-plugin --save-dev
+>
+> npm install uglifyjs-webpack-plugin@1.1.1 --save-dev
+>
+>npm install --save-dev webpack-dev-server@2.9.1
+>
+> npm install webpack-merge --save-dev
+
+
+
 
 
 
