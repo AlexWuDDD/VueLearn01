@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .box1{
+      width: 200px;
+      height: 200px;
+      background-color: #bfa;
+
+      /*border-width: 10px;*/
+      /*四个值的顺序 上 右 下 左*/
+      /*border-width: 10px 20px 30px 40px;*/
+      /*三个值 上 左右 下*/
+      /*border-width: 10px 30px 20px;*/
+      /*两个值 上下 左右*/
+      /*
+        border-top-width
+        border-right-width
+        border-bottom-width
+        border-left-width
+      */
+      border-width: 10px 30px;
+      /*border-color 也可以上右下左分别指定 同上*/
+      /*默认是color*/
+      color: red;
+      border-color: red green blue yellow;
+      /*border-style默认是none*/
+      border-style: solid dotted dashed double;
+
+      /*简写, 没有先后顺序要求*/
+      /*
+        同理还有
+          border-top
+          border-right
+          border-bottom
+          border-double
+      */
+      border: 10px orange solid;
+
+    }
+  </style>
+
+</head>
+<body>
+  <div class="box1"></div>
+</body>
+</html>

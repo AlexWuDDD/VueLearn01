@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪类选择器</title>
+  <style>
+
+    /*伪类根据所有的子元素进行排序*/
+    /*将ul里的第一个li设置为空色*/
+
+    /*
+    :first-of-type
+    :last-of-type
+    :nth-of-type
+      同一类型进行排序
+    */
+
+    /*
+    :not()
+    将符合条件的元素从选择器中删除
+    */
+
+    ul > li:first-child{
+      color: chocolate;
+    }
+
+    ul > li:last-child{
+      color: #5c6b77;
+    }
+
+    /*选中第你的子元素，*/
+    ul > li:nth-child(2){
+      color: darkcyan;
+    }
+
+    ul > li:nth-child(2n/*even*/){
+      background-color: darkviolet;
+    }
+
+    ul > li:nth-child(2n+1/*odd*/){
+      background-color: darkcyan;
+    }
+
+    ul > li:not(:nth-child(3)){
+      font-size: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>第一个</li>
+    <li>第二个</li>
+    <li>第三个</li>
+    <li>第四个</li>
+    <li>第五个</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <!--
+    audio 标签用来想页面中引入一个外部的音频文件
+
+    音视频文件引入时，默认不允许用户自己控制播放停止
+      controls 是否允许用户控制播放 有就能控制 没有就不能控制
+      autoplay 是否自动播放 大部分游览器不会自动播放音乐
+      loop 是否循环
+
+    video 标签引入视频文件
+      属性 同audio
+    -->
+
+  <audio src="" controls autoplay></audio>
+  <!-- or -->
+  <audio controls>
+    <!--    对不起，您的游览器不支持播放音频！请升级游览器！-->
+    <source src="">
+    <embed src="" type="audio/mp3" width="200" height="100">
+  </audio>
+  <br>
+  <video controls>
+    <source src="">
+  </video>
+</body>
+</html>

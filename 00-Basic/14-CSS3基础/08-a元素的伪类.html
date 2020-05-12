@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>a元素的伪类</title>
+  <style>
+    /*
+      :link表示没访问过得链接
+      :visited表示访问过的链接
+      由于隐私的原因，所以visited这个伪类只能修改链接的颜色
+    */
+
+    a:link{
+      color: red;
+    }
+    a:visited{
+      color: blue;
+    }
+
+    /*鼠标移入*/
+    a:hover{
+      color: indianred;
+      font-size: 50px;
+    }
+
+    /*鼠标点击状态*/
+    a:active{
+      color: yellowgreen;
+    }
+
+  </style>
+
+</head>
+<body>
+  <a href="https://www.baidu.com">Baidu</a>
+  <br><br>
+  <a href="https://www.sina.com.cn">Sina</a>
+  <br><br>
+  <a href="https://www.qq.com">QQ</a>
+</body>
+</html>

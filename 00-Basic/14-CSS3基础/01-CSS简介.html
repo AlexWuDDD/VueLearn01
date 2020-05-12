@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <!--
+    第二种方式 将样式写到head style标签里
+    通过CSS选择器来选中元素并为其设置各种样式
+  -->
+<!--  <style>-->
+<!--    p{-->
+<!--      color: aqua;-->
+<!--      font-size: 20px;-->
+<!--    }-->
+<!--  </style>-->
+
+  <!--
+    第三种方式（外部样式表）最佳实践
+  -->
+  <link rel="stylesheet" href="01-CSS简介.css">
+</head>
+<body>
+  <!--
+    网页分成三个部分
+      结构（HTML）
+      表现（CSS）
+      行为（JavaScript）
+
+    CSS
+      - 层叠样式
+      - 网页实际上是一个多层的机构，通过CSS可以分别为网页的每一层来设置样式
+        而最终我们能够看到的只是网页的最上边一层
+      - 总之一句话，CSS用来设置网页中元素/标签的样式
+  -->
+  <!--
+    使用CSS来修改元素的样式
+    1. 直接在标签内部通过style
+   -->
+  <p style="color: red; font-size: 30px">少小离家老大回，乡音无改鬓毛吹</p>
+
+  <p>今天天气真不错</p>
+
+</body>
+</html>

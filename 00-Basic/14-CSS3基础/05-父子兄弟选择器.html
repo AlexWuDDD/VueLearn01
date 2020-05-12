@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>父子兄弟选择器</title>
+  <style>
+    /*子元素选择*/
+    /*div > span{*/
+    /*  color: red;*/
+    /*}*/
+
+    /*后代选择*/
+    /*div span{*/
+    /*  color: firebrick;*/
+    /*}*/
+
+    /*div > p > span{*/
+    /*  color: #42b983;*/
+    /*}*/
+
+    /*紧挨着p 的下一个 span兄弟，他们之间不能有其他的兄弟元素*/
+    /*p + span{*/
+    /*  color: rebeccapurple;*/
+    /*}*/
+
+    /* 选择p下边所有的 兄弟元素span  */
+    p ~ span{
+      color: chocolate;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    我是一个div
+    <p>
+      我是div中的p元素
+      <span>我是p元素中的span</span>
+    </p>
+
+    <span>我是div中的span元素</span>
+    <span>我是div中的span元素</span>
+    <span>我是div中的span元素</span>
+  </div>
+
+</body>
+</html>

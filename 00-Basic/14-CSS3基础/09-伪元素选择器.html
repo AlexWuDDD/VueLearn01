@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪元素选择器</title>
+  <style>
+    p{
+      font-size: 15px;
+    }
+    /*伪元素表示一些特殊的位置*/
+    p::first-letter{
+      font-size: 50px;
+    }
+
+    p::first-line{
+      background-color: #5c6b77;
+    }
+
+    p::selection{
+      background-color: teal;
+    }
+
+    div::before{
+      content: '"';
+      color: red;
+    }
+
+    div::after{
+      content: '"';
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div>Hello, how are you?</div>
+  <p>
+    KAKAKAAAKAKAKAKAKKKKKKKKKKKKKKKKKKKKKKSSSSSSSSSSSSSSSSSSSSSSS
+    llllllllllllllllllllllllllllllllllllll
+  </p>
+
+</body>
+</html>
