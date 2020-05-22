@@ -2,8 +2,8 @@
   <div>
     <TabBar>
       <TabBarItem path="/home" activeColor="blue">
-        <img slot="item-icon" src="../assets/img/tabbar/home.svg" alt="">
-        <img slot="item-icon-active" src="../assets/img/tabbar/home_active.svg" alt="">
+        <img slot="item-icon" src="~assets/img/tabbar/home.svg" alt="">
+        <img slot="item-icon-active" src="~assets/img/tabbar/home_active.svg" alt="">
         <div slot="item-text">首页</div>
       </TabBarItem>
       <TabBarItem path="/category" activeColor="green">

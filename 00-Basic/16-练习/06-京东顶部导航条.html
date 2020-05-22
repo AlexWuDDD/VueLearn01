@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>京东顶部导航条</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+  <style>
+    .clearfix::before,
+    .clearfix::after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    body{
+      font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    }
+
+    /* 设置外部容器样式 */
+    .top-bar-wrapper{
+      width: 100%;
+      background-color: #E3E4E5;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px #ddd solid;
+    }
+    /* 设置内部容器样式 */
+    .top-bar{
+      width: 1190px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .top-bar a,
+    .top-bar span,
+    .top-bar i{
+      color: #999;
+      text-decoration: none;
+    }
+
+    .top-bar a:hover,
+    .top-bar a.highlight{
+      color: #f10125;
+    }
+
+    .location{
+      float: left;
+    }
+
+    .location:hover .city-list{
+      display: block;
+    }
+
+    .current-city{
+      padding: 0 10px;
+      border: 1px solid transparent;
+      border-bottom: none;
+    }
+    .location:hover .current-city{
+      background-color: white;
+
+      position: relative;
+      padding-bottom: 1px;
+      z-index: 9999;
+    }
+
+    .location .city-list{
+      width: 320px;
+      height: 436px;
+      background-color: white;
+      display: none;
+      border: 1px solid rgb(204, 204, 204);
+      position: absolute;
+      top:31px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+      z-index: 999;
+    }
+
+    .location .fas{
+      font-size: 12px;
+      color: #f10215;
+    }
+
+    .shortcut{
+      float: right;
+    }
+
+    .shortcut .line{
+      width: 1px;
+      height: 10px;
+      background-color: #999;
+      margin: 10px 12px;
+    }
+
+    .shortcut li{
+      float: left;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <!-- 创建外围容器  -->
+  <div class="top-bar-wrapper">
+    <!-- 创建内部容器  -->
+    <div class="top-bar clearfix">
+      <!-- 左侧的菜单 -->
+      <div class="location">
+        <div class="current-city">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="javascript:;">北京</a>
+        </div>
+        <!--  放置城市列表的div  -->
+        <div class="city-list">
+
+        </div>
+      </div>
+      <!-- 右侧的菜单 -->
+      <ul class="shortcut clearfix">
+        <li>
+          <a href="javascript:;">你好，请登录</a>
+          <a class="highlight" href="javascript:;">免费注册</a>
+        </li>
+        <!-- 分割线 -->
+        <li class="line"></li>
+        <li><a href="javascript:;">我的订单</a></li>
+        <li class="line"></li>
+        <li>
+          <a href="javascript:;">我的京东</a>
+          <i class="fas fa-angle-down"></i>
+        </li>
+        <li class="line"></li>
+        <li><a href="javascript:;">京东会员</a></li>
+        <li class="line"></li>
+        <li>
+          <a class="highlight" href="javascript:;">企业采购</a>
+          <i class="fas fa-angle-down"></i>
+        </li>
+        <li class="line"></li>
+        <li>
+          <span>客户服务</span>
+          <i class="fas fa-angle-down"></i>
+        </li>
+        <li class="line"></li>
+        <li>
+          <span>网站导航</span>
+          <i class="fas fa-angle-down"></i>
+        </li>
+        <li class="line"></li>
+        <li><span>手机京东</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

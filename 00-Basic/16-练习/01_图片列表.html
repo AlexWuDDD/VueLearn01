@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片列表</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    body{
+      background-color: gray;
+    }
+    .img-list{
+      width: 200px;
+      height: 600px;
+      overflow: hidden;
+      background-color: #42b983;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+
+    .img-list li:not(:last-child){
+      margin-bottom: 10px;
+    }
+
+    .img-list img{
+      width: 100%;
+      background-color: white;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <ul class="img-list">
+      <li>
+        <a href="javascript:;">
+          <img src="./assets/img/1.webp" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <img src="./assets/img/2.webp" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <img src="./assets/img/3.webp" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
