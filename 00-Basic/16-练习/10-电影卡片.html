@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>电影卡片</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+  <style>
+    .outer{
+      width: 240px;
+      margin: 100px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    }
+
+    .image-wrapper{
+      border: 1px  solid;
+    }
+
+    .image-wrapper img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+
+    .info{
+      padding: 0 18px;
+    }
+
+    .info .title{
+      color: #717171;
+      font-size: 18px;
+      margin: 13px 0 15px 0;
+    }
+
+    .info .category{
+      color: #acaaaa;
+      font-size: 14px;
+    }
+
+    .info .category i{
+      margin-left: 4px;
+      margin-right: 7px;
+    }
+
+    .info .intro{
+      color: #acaaaa;
+      font-size: 14px;
+      margin: 18px 4px;
+      line-height: 20px;
+    }
+
+    .star-wrapper{
+      height: 46px;
+      line-height: 46px;
+      border: 1px solid #E9E9E9;
+      color: #ddd;
+      padding: 0 16px;
+    }
+
+    .star-wrapper .star{
+      float: left;
+    }
+
+    .star-wrapper .light{
+      color: #b9cb41;
+    }
+
+    .star-wrapper .weibo{
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <!-- 创建一个外层容器 -->
+  <div class="outer">
+    <!--  创建图片容器  -->
+    <div class="image-wrapper">
+      <img src="./assets/10/movie.jpeg" alt="">
+    </div>
+    <!--  创建内容区容器  -->
+    <div class="info">
+      <h2 class="title">
+        加勒比海盗
+      </h2>
+      <h3 class="category">
+        <i class="fas fa-map-marker-alt"></i>
+        冒险
+      </h3>
+      <p class="intro">
+        《加勒比海盗》系列电影主要讲述了17世纪的海盗杰克·斯帕罗充满危险的加勒比冒险之旅的故事。
+      </p>
+    </div>
+    <!--  创建评分的容器  -->
+    <div class="star-wrapper">
+      <!-- 创建星星 -->
+      <ul class="star">
+        <li class="fas fa-star light"></li>
+        <li class="fas fa-star light"></li>
+        <li class="fas fa-star"></li>
+        <li class="fas fa-star"></li>
+      </ul>
+
+      <!--   分享   -->
+      <ul class="weibo">
+        <li class="fab fa-weibo"></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

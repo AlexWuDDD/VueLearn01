@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单</title>
+</head>
+<body>
+  <!-- 网页中的表单用于将本地的数据提交给远程的服务器 -->
+  <!-- form属性
+    action - 表单要提交的服务器的地址
+   -->
+  <form action="target.html">
+    <!--  添加表单项
+        文本框
+        注意：数据要提交到服务器中，必须要为元素指定一个name属性值
+        提交按钮
+        单选框
+          - 必须指定一个value属性，value属性最终会作为用户的填写的值
+          - checked 可以将单选按钮设置为默认
+        多选框
+        下拉列表
+      -->
+    文本框<input type="text" name="username">
+    <br>
+    密码框<input type="password" name="password">
+    <br>
+    男<input type="radio" name="sex" value="male" checked>
+    女<input type="radio" name="sex" value="female">
+    <br>
+    多选框
+    <input type="checkbox" name="test" value="1">
+    <input type="checkbox" name="test" value="1">
+    <input type="checkbox" name="test" value="1" checked>
+    <br>
+    <select name="city" id="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3" selected>3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <br>
+    <input type="submit" value="提交">
+  </form>
+</body>
+</html>

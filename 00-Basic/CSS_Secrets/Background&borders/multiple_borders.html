@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>multiple_borders</title>
+  <style>
+    div{
+      width: 400px;
+      height: 200px;
+      margin: 50px auto;
+      /*box-shadow solution*/
+      /*background-color: yellowgreen;*/
+      /*box-shadow: 0 0 0 10px #655,*/
+      /*            0 0 0 15px deeppink,*/
+      /*            0 2px 5px 15px rgba(0,0,0, .6);*/
+
+      /* outline solution */
+      background: yellowgreen;
+      border: 10px solid #655;
+      outline: 5px dashed deeppink;
+      outline-offset: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
