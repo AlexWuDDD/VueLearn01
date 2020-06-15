@@ -3,6 +3,11 @@
   <div class="title"> Beginner Projects </div>
   <AppButton path="/bin2dec" AppName="Bin2Dec"></AppButton>
   <AppButton path="/borderRadiusPreviewer" AppName="BorderRadiusPreviewer"></AppButton>
+  <AppButton path="/calculator" AppName="Calculator"></AppButton>
+  <AppButton path="/christmasLights" AppName="ChristmasLights"></AppButton>
+  <AppButton path="/causeEffect" AppName="CauseEffect"></AppButton>
+  <AppButton path="/colorCycle" AppName="ColorCycle"></AppButton>
+  <AppButton path="/countdown" AppName="Countdown"></AppButton>
   <BackButton path="/home"></BackButton>
   <router-view/>
 </div>
