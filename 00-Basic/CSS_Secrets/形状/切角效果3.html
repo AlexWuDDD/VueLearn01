@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .box{
+      --transparentSize: 15px;
+      --BGColor:#58a;
+
+      width: 300px;
+      height: 200px;
+
+      background: #58a;
+
+      background:
+          radial-gradient(circle at top left, transparent var(--transparentSize), var(--BGColor) 0) top left,
+          radial-gradient(circle at top right, transparent var(--transparentSize), var(--BGColor) 0) top right,
+          radial-gradient(circle at bottom right, transparent var(--transparentSize), var(--BGColor) 0) bottom right,
+          radial-gradient(circle at bottom left, transparent var(--transparentSize), var(--BGColor) 0) bottom left;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

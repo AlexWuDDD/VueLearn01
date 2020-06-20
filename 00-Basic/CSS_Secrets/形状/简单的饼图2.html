@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>基于transform的解决方案</title>
+  <style>
+    circle{
+      fill: yellowgreen;
+      stroke: #655;
+      stroke-width: 32;
+      stroke-dasharray: 0,100;
+
+      animation: fillup 5s linear infinite;
+    }
+
+    @keyframes fillup {
+      to {stroke-dasharray: 100, 100}
+    }
+
+    svg{
+      width: 100px;height: 100px;
+      transform: rotate(-90deg);
+      background: yellowgreen;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 32 32">
+    <circle r="16" cx="16" cy="16"></circle>
+  </svg>
+</body>
+</html>
+
+<!--
+$$('.pie').forEach(function(pie) {
+var p = parseFloat(pie.textContent);
+var NS = "http://www.w3.org/2000/svg";
+var svg = document.createElementNS(NS, "svg");
+var circle = document.createElementNS(NS, "circle");
+var title = document.createElementNS(NS, "title");
+circle.setAttribute("r", 16);
+circle.setAttribute("cx", 16);
+circle.setAttribute("cy", 16);
+circle.setAttribute("stroke-dasharray", p + " 100");
+svg.setAttribute("viewBox", "0 0 32 32");
+title.textContent = pie.textContent;
+pie.textContent = '';
+svg.appendChild(title);
+svg.appendChild(circle);
+pie.appendChild(svg);
+});
+
+
+
+-->

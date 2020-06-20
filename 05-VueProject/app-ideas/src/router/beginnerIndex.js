@@ -1,10 +1,11 @@
 const Bin2Dec = ()=>import("views/beginner/apps/Bin2Dec");
-const BorderRadiusPreviewer = ()=>import("views/beginner/apps/BorderRadiusPreviewer")
+const BorderRadiusPreviewer = ()=>import("views/beginner/apps/BorderRadiusPreviewer");
 const Calculator = ()=>import("views/beginner/apps/Calculator");
-const ChristmasLights = ()=>import("views/beginner/apps/ChristmasLights")
-const CauseEffect = ()=>import("views/beginner/apps/CauseEffect")
-const ColorCycle = ()=>import("views/beginner/apps/ColorCycle")
-const Countdown = ()=>import("views/beginner/apps/Countdown")
+const ChristmasLights = ()=>import("views/beginner/apps/ChristmasLights");
+const CauseEffect = ()=>import("views/beginner/apps/CauseEffect");
+const ColorCycle = ()=>import("views/beginner/apps/ColorCycle");
+const Countdown = ()=>import("views/beginner/apps/Countdown");
+const CSV2JSON = ()=>import("views/beginner/apps/CSV2JSON");
 
 const beginnerApps = [
   {path: '/bin2dec', component: Bin2Dec, meta:{title:'Bin2Dec'}},
@@ -14,6 +15,7 @@ const beginnerApps = [
   {path: '/causeEffect', component: CauseEffect, meta: {title:'CauseEffect'}},
   {path: '/colorCycle', component: ColorCycle, meta: {title:'ColorCycle'}},
   {path: '/countdown', component: Countdown, meta: {title:'Countdown'}},
+  {path: '/csv2json', component: CSV2JSON, meta: {title:'CSV2JSON'}},
 ];
 
 export default beginnerApps;

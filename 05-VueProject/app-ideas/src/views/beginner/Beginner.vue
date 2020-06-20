@@ -8,6 +8,7 @@
   <AppButton path="/causeEffect" AppName="CauseEffect"></AppButton>
   <AppButton path="/colorCycle" AppName="ColorCycle"></AppButton>
   <AppButton path="/countdown" AppName="Countdown"></AppButton>
+  <AppButton path="/csv2json" AppName="CSV2JSON"></AppButton>
   <BackButton path="/home"></BackButton>
   <router-view/>
 </div>

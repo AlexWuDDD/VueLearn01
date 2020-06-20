@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+
+    body {
+      min-height: 100vh;
+      box-sizing: border-box;
+      margin: 0;
+      padding-top: calc(50vh - 6em);
+      font: 150%/1.6 Baskerville, Palatino, serif;
+    }
+
+    body, main::before{
+      background: url("../img/tiger.jpg") 0 /cover fixed;
+    }
+
+    main{
+      position: relative;
+      background: hsla(0, 0%, 100%,.2);
+      margin: 0 auto;
+      padding: 1em;
+      max-width: 23em;
+      overflow: hidden;
+    }
+
+    main::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      filter: blur(20px);
+      margin: -30px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <main>
+    <blockquote>“The only way to get rid of a temptation is to yield to it. Resist it, and your soul grows sick with longing for the things it has forbidden to itself, with desire for what its monstrous laws have made monstrous and unlawful.”</em>
+      <footer>— <cite>Oscar Wilde, The Picture of Dorian Gray</cite></footer>
+    </blockquote>
+  </main>
+</main>
+</body>
+</html>

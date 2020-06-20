@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      background: #bfa;
+    }
+    .marching-ants{
+      width: 200px;
+      height: 50px;
+
+      padding: 1em;
+      border: 1px solid transparent;
+      background:
+        linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg, black 0, black 25%, white 0,
+          white 50%) 0 / .6em .6em;
+      animation: ants 12s linear infinite;
+    }
+
+    @keyframes ants {to {background-position: 100%}}
+  </style>
+</head>
+<body>
+  <div class="marching-ants">
+      I have a nice stone art border, don.t I look pretty?
+  </div>
+</body>
+</html>
